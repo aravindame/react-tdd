@@ -20,3 +20,4 @@ jobs:
             - dist
             - package.json
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+      - run: npm run test
